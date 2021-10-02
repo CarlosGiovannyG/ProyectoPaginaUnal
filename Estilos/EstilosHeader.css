@@ -1,0 +1,124 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+
+/*-------------------*/
+
+nav {
+  margin: 1em auto;
+ background: rgba(0, 0, 0, 0.473);
+  width: 100%;
+  height: 90px;
+  border-radius: 20px;
+}
+
+/*Logo del restaurante*/
+
+.logo{
+  width: 140px; 
+position: absolute;
+left: 47%;
+}
+
+.logo h1 {  
+  height: 3em;
+  padding: 5px;
+  text-align: center;
+  border: 5px  rgb(255, 255, 255) double;
+  border-radius: 15px;  
+  font-size: 25px;
+  font-family: "Old English Text MT";
+  background: rgb(175, 0, 0);  
+  color: white;  
+}
+
+/*___________new change________________*/
+.logo:hover{
+  box-shadow: 0px 0px 10px rgb(255, 255, 255);
+  border-radius: 15px;
+}
+
+.contenedor-navegacion {
+ display: flex;
+ flex-direction: row; 
+ padding: auto;
+}
+/*enlaces del encabezado*/
+ul li {
+  list-style: none;  
+  margin-left: 20px;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: Bookshelf Symbol 7;
+  font-weight:700;
+}
+
+nav li{
+  display: flex;
+  float: left;
+  display: inline;
+}
+
+.enlaces-encabezado{
+  padding: 35px;
+}
+
+.In{
+  position: absolute;
+  left: 10%;
+}
+
+
+/*__________________________nuevos cambios_________________________________________________*/
+nav .resaltado, header .In a{
+ padding: 8px;
+ border-top: 2px solid rgb(175, 0, 0);
+ border-bottom:2px solid rgb(175, 0, 0);
+}
+
+
+nav a:hover{
+  padding: 8px;
+  border-top: 2px solid rgb(175, 0, 0);
+  border-bottom:2px solid rgb(175, 0, 0);
+  animation: ease-in animar 0.5s;
+}
+
+@keyframes animar{
+  0%{
+      transform: scale(.3);
+      border-radius: 100%;
+  }
+
+}
+/*___________________________________________________________________________*/
+.Me{
+  position: absolute;
+  left: 20%;
+}
+
+.Se{
+  position: absolute;
+  left: 30%;
+}
+
+.Ac{
+  position: absolute;
+  left: 57%;
+}
+
+.Pa{
+  position: absolute;
+  left: 75%;
+}
+
+.Bl{
+  position: absolute;
+  left: 85%;
+}

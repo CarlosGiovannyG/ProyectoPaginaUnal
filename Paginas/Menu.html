@@ -5,165 +5,178 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../Estilos/Estilos.css">
-  <link rel="stylesheet" href="../Estilos/Estilos_Menu.css">
-  <title>Menu</title>
-
-  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
-
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-
+  <link rel="stylesheet" href="../Estilos/EstilosMenu.css">
+  <title>Proyecto Unal</title>
 </head>
 
-  <body>
-    <!-- header section starts -->
-    <header>
-
-      <a href="#" class="logo"><i class="fas fa-utensils">ResTic.</i></a>
-
-    <nav class="navbar">
-      <a class="active" href="#home">home</a>
-      <a href="#platos">platos</a>
-      <a href="#nosotros">nosotros</a>
-      <a href="#menu">menú</a>
-      <a href="#revisar">revisar</a>
-      <a href="#orden">orden</a>
-    </nav>
-
-    <div class="icons">
-      <i class="fas fa-bars" id="menu-bars"></i>
-      <i class="fas fa-search" id="search-icon"></i>
-      <a href="#" class="fas fa-heart"></a>
-      <a href="#" class="fas fa-shopping-cart"></a>
-    </div>
-      <nav>
-        <section class="contenedor-navegacion">
-          <div class="logo">
-            <h1>
-              <i class="fas fa-utensils"></i>
-                <hr>Restaurante mintic</h1>
-            </h1>
-          </div>
-          <div class="enlaces-encabezado">
-            <ul>
-              <li class="In">
-                <a href="#">
-                  <i class="fas fa-home"></i>
-                  Inicio
-                </a>
-              </li>
-              <li class="Me">
-                <a href="#">            
-              <li>
-                <a href="./Paginas/Menu.html">
-                  <i class="fas fa-utensils"></i>
-                  Menu
-                </a>
-              </li>
-              <li class="Se">
-                <a href="#">
-                  <i class="fas fa-home"></i>
-                  Servicios
-                </a>
-              </li>
-              <li class="Ac">
-                <a href="#">
-                  <i class="fas fa-user-tie"></i>
-                  Acerca de nosotros
-                </a>
-              </li>
-              <li class="Pa">
-                <a href="#">
-                  <i class="fas fa-file"></i>
-                  Paginas
-                </a>
-              </li>
-              <li class="Bl">
-                <a href="#">
-                  <i class="far fa-newspaper"></i>
-                  Blog
-                </a>
-              </li>
-            </ul>
-          </div>
-        </section>
-      </nav>
-    </header>
-    <!-- header section ends -->
-  
-    <!-- search form -->
-  
-    <form action="" id="search-form">
-      <input type="search" placeholder="search here..." name="" id="search-box">
-      <label for="search-box" class="fas fa-search"></label>
-      <i class="fas fa-times" id="close"></i>
-    </form>
-  
-  <!-- home section start -->
-  
-  <section class="home" id="home">
-  
-    <div class="swiper home-slider">
-  
-        <div class="swiper-wrapper wrapper">
-            <div class="swiper-slide slide">
-                <div class="content">
-                    <span>Nuestros Platos Especiales</span>
-                    <h3>Pasta a la Boloñesa</h3>
-                    <p>Frijoles, carne asada, arroz blanco, chicharrón, chorizo, aguacate, huevo, Platano, Arepa</p>
-                    <a href="#" class="btn">Agregar</a>
-                </div>
-                <div class="image">
-                    <img src="../img/Platos/home-img-1.png" alt="">
-                </div>
-            </div>
-            <div class="swiper-slide slide">
-                  <div class="content">
-                      <span>Nuestros Platos Especiales</span>
-                      <h3>Pollo en salsa Campesina</h3>
-                      <p>Sopa del día, consomé de pescado o fruta, arroz blanco, ensalada, patacón, jugo del día</p>
-                      <a href="#" class="btn">Agregar</a>
-                  </div>
-                  <div class="image">
-                      <img src="../img/Platos/home-img-2.png" alt="">
-                  </div>
-            </div>
-            <div class="swiper-slide slide">
-                  <div class="content">
-                      <span>Nuestros Platos Especiales</span>
-                      <h3>Pizza Chuletón</h3>
-                      <p>Consomé de pescado o fruta, arroz blanco, ensalada, patacón</p>
-                      <a href="#" class="btn">Agregar</a>
-                  </div>
-                  <div class="image">
-                      <img src="../img/Platos/home-img-3.png" alt="">
-                  </div>
-          </div>
+<body class="cuerpo-menu">
+  <header>
+    <nav>
+      <section class="contenedor-navegacion">
+        <div class="logo">
+          <h1>
+            <i class="fas fa-utensils"></i>
+              <hr>Restaurante mintic
+          </h1>
         </div>
-  
-        <div class="swiper-pagination"></div>
-  
-    </div>
-  
-  </section>
-  
-  <!-- home section ends -->
-  
-  
-  
-  
-  
-  
-  
+        <div class="enlaces-encabezado">
+          <ul>
+            <li class="Ini">
+              <a href="../Index.htm">
+                <i class="fas fa-home"></i>
+                Inicio
+              </a>
+            </li>
+            <li class="Me">
+              <a href="./Menu.html">
+                <i class="fas fa-utensils"></i>
+                Menu
+              </a>
+            </li>
+            <li class="Se">
+              <a href="#">
+                <i class="fas fa-home"></i>
+                Servicios
+              </a>
+            </li>
+            <li class="Ac">
+              <a href="#">
+                <i class="fas fa-user-tie"></i>
+                Acerca de nosotros
+              </a>
+            </li>
+            <li class="Pa">
+              <a href="#">
+                <i class="fas fa-file"></i>
+                Paginas
+              </a>
+            </li>
+            <li class="Bl">
+              <a href="#">
+                <i class="far fa-newspaper"></i>
+                Blog
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </nav>
+  </header>
+  <section class="fondo-slider">
+  <div class="contenedor-slider">
+      <div class="slider" id="slider">
+        <div class="slider__section">
+                <img src="../img/Slider/slider_5.jpg" alt="" class="slider__img">
+            </div>
+            <div class="slider__section">
+                <img src="../img/Slider/slider_2.jpg" alt="" class="slider__img">
+            </div>
+            <div class="slider__section">
+                <img src="../img/Slider/slider_3.jpg" alt="" class="slider__img">
+            </div>
+            <div class="slider__section">
+              <img src="../img/Slider/slider_4.jpg" alt="" class="slider__img">
+            </div>
+            <div class="slider__section">
+                <img src="../img/Slider/slider_8.jpg" alt="" class="slider__img">
+            </div>
+            <div class="slider__section">
+              <img src="../img/Slider/slider_6.jpg" alt="" class="slider__img">
+            </div>
+            <div class="slider__section">
+                <img src="../img/Slider/slider_7.jpg" alt="" class="slider__img">
+            </div>
+            <div class="slider__section">
+                <img src="../img/Slider/slider_10.jpg" alt="" class="slider__img">
+            </div>
+      </div>
+        <div class="slider__btn slider__btn--right" id="btn-right">&#62;</div>
+        <div class="slider__btn slider__btn--left"  id="btn-left">&#60;</div>
+  </div>
+</section>
+<section class="seccion1">
+        <div class="caja-1">
+          <img src="../img/Slider/slider_5.jpg">
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe quidem sed beatae iure optio eos itaque sint excepturi. Quia dolorum molestias unde iusto magni laboriosam quam quae officia omnis necessitatibus?</p>
+          <button type="submit" class="comprar">Pedir</button>          
+        </div>
+        <div class="caja-1">
+            <img src="../img/Slider/slider_5.jpg">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe quidem sed beatae iure optio eos itaque sint excepturi. Quia dolorum molestias unde iusto magni laboriosam quam quae officia omnis necessitatibus?</p>
+            <button type="submit" class="comprar">Pedir</button>
+          </div>
+        <div class="caja-1">
+            <img src="../img/Slider/slider_5.jpg">
+            <p>Lorem, ipsum dolor sit amet consectPediripisicing elit. Saepe quidem sed beatae iure optio eos itaque sint excepturi. Quia doloruPedirtias unde iusto magni laboriosam quam quae officia omnis necessitatibus?</p>
+            <button type="submit" class="comprar">Pedir</button>
+          </div>
+          <div class="caja-1">
+            <img src="../img/Slider/slider_5.jpg">
+            <p>Lorem, ipsum dolor sit amet consectPediripisicing elit. Saepe quidem sed beatae iure optio eos itaque sint excepturi. Quia doloruPedirtias unde iusto magni laboriosam quam quae officia omnis necessitatibus?</p>
+            <button type="submit" class="comprar">Pedir</button>
+        </div>
+        <div class="caja-1">
+          <img src="../img/Slider/slider_5.jpg">
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe quidem sed beatae iure optio eos itaque sint excepturi. Quia dolorum molestias unde iusto magni laboriosam quam quae officia omnis necessitatibus?</p>
+          <button type="submit" class="comprar">Comprar</button>
+        </div>
+        <div class="caja-1">
+          <img src="../img/Slider/slider_5.jpg">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe quidem sed beatae iure optio eos itaque sint excepturi. Quia dolorum molestias unde iusto magni laboriosam quam quae officia omnis necessitatibus?</p>
+            <button type="submit" class="comprar">Comprar</button>
+            
+          </div>
+          <div class="caja-1">
+              <img src="../img/Slider/slider_5.jpg">
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe quidem sed beatae iure optio eos itaque sint excepturi. Quia dolorum molestias unde iusto magni laboriosam quam quae officia omnis necessitatibus?</p>
+              <button type="submit" class="comprar">Comprar</button>
+            </div>
+          <div class="caja-1">
+              <img src="../img/Slider/slider_5.jpg">
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe quidem sed beatae iure optio eos itaque sint excepturi. Quia dolorum molestias unde iusto magni laboriosam quam quae officia omnis necessitatibus?</p>
+              <button type="submit" class="comprar">Comprar</button>
+          </div>
+          <div class="caja-1">
+              <img src="../img/Slider/slider_5.jpg">
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe quidem sed beatae iure optio eos itaque sint excepturi. Quia dolorum molestias unde iusto magni laboriosam quam quae officia omnis necessitatibus?</p>
+              <button type="submit" class="comprar">Comprar</button>
+          </div>
+     
+    </section>
+   
     <footer>
+      <div class="partFooter" >
+          <h1>Delicias<b>&nbsp;Colombianas</b></h1>
+          <br>
+          <p>Este espacio es que se especializa en el desarrollo & diseño de plataformas web, bases de datos, aplicaciones en java  y edición de producciones de audios & videos.</p>
+        </div>
+    
+      <div class="partFooter">
+        <h5>INFORMACIÓN DE CONTACTO</h5>
+          <a href="#"><i class="fas fa-map-marker-alt"></i> Medellín: Carrera 45 #49-60</a>
+          <a href="#"><i class="fas fa-headset"></i> + 57 313 3189354</a>
+          <a href="#"><i class="fas fa-envelope"></i> AY DCD.Colombia@gmail.com</a>
+        
+      </div>
+      <div class="partFooter">
+        <h4 class="redes">REDES SOCIALES</h4>
+        <div class="social-media">
+          <i class="fab fa-facebook-f"></i>
+              <i class="fab fa-instagram"></i>
+              <i class="fab fa-whatsapp"></i>
+              <i class="far fa-envelope"></i>
+          </div>
+      </div>
+      <div class="container-footer">
+      <hr> 
+      <h4> &copy; 2021 by Grupo 5</h4>
+    </div>
+      </footer>
   
-    </footer>
-  
-  <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
-  
-  <!-- custom js file link -->
-  <script src="../js/Script.js"></script>
-  
-  </body>
-  
-  </html>
+
+      <script src="https://kit.fontawesome.com/c15b744a04.js" crossorigin="anonymous"></script>
+ 
+      <script src="../js/slider.js"></script>
+    </body>
+    
+</html>

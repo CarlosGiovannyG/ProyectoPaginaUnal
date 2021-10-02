@@ -3,13 +3,15 @@
   padding: 0;
 }
 
+
 /*imagen de fondo*/
 .cuerpo-inicio{
-  height: 100vh;
-  background: url('../img/Slider/slider_8.jpg')center;
+  background: url('../img/Slider/slider_8.jpg')center/cover;
   background-repeat: no-repeat;
-  background-size:cover;
+  background-size:150%;
+  margin:  20px;
 }
+
 /*-------------------*/
 
 /*Logo del restaurante*/
@@ -23,19 +25,30 @@
   color: white;
   border: 5px  rgb(255, 255, 255) double;
   border-radius: 15px;
+  
 }
+
 .logo{
 position: absolute;
 left: 43%;
+}
+/*___________new change________________*/
+.logo:hover{
+  box-shadow: 0px 0px 10px rgb(255, 255, 255);
+  border-radius: 15px;
 
 }
+/*_____________________________*/
 /*---------------------*/
 
+
 nav {
-  margin: 0 auto;
  background: rgba(0, 0, 0, 0.473);
-  width: 98%; 
+  width: 100%;
+  height: 90px;
   border-radius: 20px;
+
+
 }
 
 .contenedor-navegacion {
@@ -44,7 +57,6 @@ nav {
 }
 /*enlaces del encabezado*/
 ul li {
-
   list-style: none;  
   margin-left: 20px;
 }
@@ -71,10 +83,36 @@ nav li{
   position: absolute;
   left: 10%;
 }
+
+
+/*__________________________nuevos cambios_________________________________________________*/
+nav .resaltado, header .In a{
+ padding: 8px;
+ border-top: 2px solid rgb(175, 0, 0);
+ border-bottom:2px solid rgb(175, 0, 0);
+   
+}
+
+
+nav a:hover{
+  padding: 8px;
+  border-top: 2px solid rgb(175, 0, 0);
+  border-bottom:2px solid rgb(175, 0, 0);
+  animation: ease-in animar 0.5s;
+
+}
+@keyframes animar{
+  0%{
+      transform: scale(.3);
+      border-radius: 100%;
+  }
+}
+/*___________________________________________________________________________*/
 .Me{
   position: absolute;
   left: 20%;
 }
+
 .Se{
   position: absolute;
   left: 30%;
@@ -102,10 +140,9 @@ nav li{
 /*contenido del inicio*/
 
 .contenido-inicio{
-  margin: 1% auto;
-  width: 97%;
-  height: 82%;
-  border-top: 10px solid rgba(0, 0, 0, 0.473);
+  width: 100%;
+  height: 600px;
+  border-top: 10px solid rgba(0, 0, 0, 0.575);
   border-radius: 20px;
   background:rgba(0, 0, 0, 0.473);
  
@@ -136,143 +173,252 @@ color: blanchedalmond;
     color: #fff;
     padding: 12px 0;
     text-decoration: none;
-    font-weight: 400;
+    font-weight: 700;
     text-transform: uppercase;
     font-size: 14px;
     border-radius: 5px;
-    box-shadow: 0 8px 32px rgba(212, 21, 21, 0.46);    
-}
+    box-shadow: 0 8px 32px rgba(212, 21, 21, 0.46);
 
-footer {
-    display: flex;
-    width: 100%;
-    height: 40vh;
-    background-image: url("../img/Platos/plato_25.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;   
-}
-
-footer >.contenedor {
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0,0,0,0.573);
-    display: flex;
-}
-
-footer >.contenedor >.marcas {
-    width: 100%;
-    height: 20%;
-    display: flex;
-    justify-content:flex-end;
-    align-items:flex-start;
-    margin-top: 2%;
-    padding: 30px;
-}
-
-/* tamaño y espacio de iconos*/
-footer >.contenedor >.marcas >img {
-    width: 70px;
-    padding: 6px 1px;
-}
-
-footer >.contenedor >.contacto >img {
-    width: 70px;
-    padding: 6px 1px;
-}
-
-footer >.contenedor >.email >img {
-    width: 70px;
-    padding: 6px 1px;
-}
-
-/* redes sociales */
-.redes-sociales {
   
-    display: flex;
-    position: absolute;
-    right: 140px;
-    margin-top: 1%;
+    
 }
 
-.informacion {
- 
-    display: flex;
-    position: absolute;
-    left: 60px;
-    margin-top: 1%;
+.contenidos a:hover{
+  box-shadow: 0px 0px 10px rgb(255, 255, 255);
+  border-radius: 5px;
+
 }
 
-.contacto {
-    display: flex;
-    position: absolute;
-    left: 180px;
-    margin-top: 2%;
-}
-
-.info-contacto {
-    display: flex;
-    position: absolute;
-    left: 250px;
-    margin-top: 3.5%;
-}
-
-.email {
-    display: flex;
-    position: absolute;
-    left: 130px;
-    margin-top: 6%;
-}
-
-.info-email {
-    display: flex;
-    position: absolute;
-    left: 200px;
-    margin-top: 7.5%;
-}
-
-.titulo {
-    color: white;
-    margin-bottom: 50px;
-}
-
-.contenedor-footer {
-  position: absolute;
+/*_____________Menu______________*/
+.cuerpo-menu{
   width: 100%;
-  margin-top: 12%; 
- display: flex;
- flex-direction: row;  
+  height: 100vh;
+background: url('../img/Slider/slider_5.jpg')center/cover;
+background-repeat: no-repeat;
+
+  /* background-size:400%; */
+  margin: 20px;
 }
 
-.enlaces-footer{  
-  padding: 5px;
-}
-.In{
+.Ini{
   position: absolute;
   left: 10%;
 }
-.Me{
+
+.Men{
   position: absolute;
   left: 20%;
 }
-.Se{
-  position: absolute;
-  left: 30%;
+
+nav .resaltado, header .Me a{
+  padding: 8px;
+  border-top: 2px solid rgb(175, 0, 0);
+  border-bottom:2px solid rgb(175, 0, 0);
+    
+ }
+
+
+ .seccion1{
+   
+  justify-items: center;
+  background: #000000a8;
+  width: 80%;
+  margin: 30px auto;
+   padding: 2.5em;
+   display: grid;
+   grid-gap: 6em;
+   grid-template-columns: 1fr 1fr 1fr;
+   border-radius: 10px;
+ 
+  
+   
+ }
+
+ .caja-1{
+  
+  width: 230px;
+   background: rgba(255, 255, 255, 0.345);
+   border-radius: 10px;
+   text-align: center;
+   border: 5px #ffffffb6 double;
+ 
+  
+
+ }
+ .caja-1:hover{
+  box-shadow: 0 8px 32px rgba(252, 252, 252, 0.589);
+ }
+ 
+ .caja-1 img{
+   margin-top: 10px;
+   width: 100px;
+   height: 100px;
+   border-radius: 10px;
+ }
+ .caja-1 p{
+   text-align: justify;
+   padding: 15px;
+ }
+
+ .comprar{
+  margin: 28px 0 10px 0;
+  width: 130px;
+  display: inline-block;
+  background: #de1f1f;
+  text-align: center;
+  color: #fff;
+  padding: 12px 0;
+  text-decoration: none;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 14px;
+  border-radius: 5px;
+  box-shadow: 0 8px 32px rgb(212, 21, 21);
+
+ }
+
+
+
+
+ 
+
+
+
+ /*footer_________________*/
+ footer {
+  background:rgba(0, 0, 0, 0.637);
+  padding: 20px 20px 20px;
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  font-family: 'Roboto', sans-serif;
+  height: 300px;
+  border-top: 5px solid rgba(0, 0, 0, 0.705);
+  border-radius: 10px;
+  margin-top: 20px;
+
+  
+  
 }
-.Ac{
-  position: absolute;
-  left: 57%;
 
+.partFooter {
+  width: 30%;
+  text-align: center;
+  margin: 20px;
+  margin-top: 35px;
+  
+ 
 }
 
-.Pa{
-  position: absolute;
-  left: 75%;
 
+.partFooter h5 {
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 30px;
+  text-shadow:0px 0px 10px rgb(0, 181, 253); 
+  box-shadow:3px 3px 3px rgb(149, 183, 255);
+  border-radius: 5px;
+  
 }
 
-.Bl{
-  position: absolute;
-  left: 85%;
-
+.partFooter h4 {
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 30px;
+  margin-left: 50px;
+  text-shadow:0px 0px 10px rgb(0, 181, 253); 
+  box-shadow:3px 3px 3px rgb(149, 183, 255);
+  border-radius: 5px;
+  
 }
 
+.partFooter a {
+  display: block;
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 300;
+  transition: color .3s ease-in-out;
+  margin-bottom: 15px;
+ 
+}
+.partFooter .fa-facebook-f:hover{
+  background: #3b5998;
+  color: white;
+}
+.partFooter .fa-instagram:hover{
+  background: linear-gradient(to top right, 
+  #fcde30, 
+  #e9712a, 
+  #d2313b, 
+  #ae4198, 
+  #7540a1, 
+  #5443a8);
+  color: white;
+}
+.partFooter .fa-whatsapp:hover{
+  background: #009231;
+  color: white;
+}
+.partFooter .fa-envelope:hover{
+  background: #d80202;
+  color: white;
+}
+.redes{
+  margin-right: 50px;
+}
+
+.partFooter img {
+  width: 70%;
+}
+
+.social-media i {
+  font-size: 20px;
+  display: inline-block;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  border-radius: 50%;
+  width: 38px;
+  height: 38px;
+  line-height: 36px;
+  cursor: pointer;
+  margin-top: 20px;
+  text-align: center;
+  transition: all ease-in-out .3s;
+  margin-right: 5px;
+}
+.partFooter>h1{
+  color: #ffffff;
+  margin-top: -20px;
+  box-shadow:3px 3px 3px rgb(149, 183, 255);
+
+}
+.partFooter b{
+  color:#ffffff
+
+}
+.partFooter p{
+
+  font-size: 17px;
+  text-align: justify;
+  color: #ffffff;
+  font-weight: 300;
+  display: inline-block;
+  padding: 10px;
+}
+
+.container-footer hr{
+
+  border: none;
+  height: 2px;
+  background: rgb(149, 183, 255);
+  width: 900px;
+}
+.container-footer h4{
+  text-align: center;
+  margin-top: 20px;
+  color: rgb(149, 183, 255);
+  font-weight: bold;
+}

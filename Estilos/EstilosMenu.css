@@ -1,0 +1,426 @@
+*{
+    margin: 0;
+    padding: 0;
+  }
+  
+  
+  /*imagen de fondo*/
+  .cuerpo-menu{
+    background: url('../img/Slider/slider_5.jpg')center/cover;
+    background-repeat: no-repeat;
+  
+    margin: 20px;
+  
+  }
+  /*-------------------*/
+  
+  /*Logo del restaurante*/
+  .logo h1 {
+    font-size: 25px;
+    font-family: "Old English Text MT";
+    background: rgb(175, 0, 0);
+    width: 140px;
+    padding: 5px;
+    text-align: center;
+    color: white;
+    border: 5px  rgb(255, 255, 255) double;
+    border-radius: 15px;
+    
+  }
+  
+  .logo{
+  position: absolute;
+  left: 43%;
+  
+  }
+  /*___________new change________________*/
+  .logo:hover{
+    box-shadow: 0px 0px 10px rgb(255, 255, 255);
+    border-radius: 15px;
+  
+  }
+  /*_____________________________*/
+  /*---------------------*/
+  
+  
+  nav {
+   background: rgba(0, 0, 0, 0.473);
+    width: 100%;
+    height: 90px;
+    border-radius: 20px;
+  
+  
+  }
+  
+  .contenedor-navegacion {
+   display: flex;
+   flex-direction: row; 
+  }
+  /*enlaces del encabezado*/
+  ul li {
+  
+    list-style: none;  
+    margin-left: 20px;
+  }
+  
+  a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: Bookshelf Symbol 7;
+    font-weight:700;
+  }
+  
+  nav li{
+    display: flex;
+    float: left;
+    display: inline;
+  
+  
+  }
+  .enlaces-encabezado{
+    padding: 35px;
+  }
+  .In{
+    position: absolute;
+    left: 10%;
+  }
+  
+  .Me{
+    position: absolute;
+    left: 20%;
+  }
+  
+  .Se{
+    position: absolute;
+    left: 30%;
+  }
+  .Ac{
+    position: absolute;
+    left: 57%;
+  
+  }
+  
+  .Pa{
+    position: absolute;
+    left: 75%;
+  
+  }
+  
+  .Bl{
+    position: absolute;
+    left: 85%;
+  
+  }
+  
+  
+  .Ini{
+    position: absolute;
+    left: 10%;
+  }
+  
+  .Men{
+    position: absolute;
+    left: 20%;
+  }
+  
+  nav .resaltado, header .Me a{
+    padding: 8px;
+    border-top: 2px solid rgb(175, 0, 0);
+    border-bottom:2px solid rgb(175, 0, 0);
+      
+   }
+  
+  
+   .seccion1{
+    border-top: 10px solid rgba(0, 0, 0, 0.575);
+    justify-items: center;
+    background: #000000a8;
+    margin: 0px auto;
+     padding: 2.5em;
+     display: grid;
+     grid-gap: 6em;
+     grid-template-columns: 1fr 1fr 1fr;
+     border-radius: 20px;
+ 
+     
+   }
+  
+   .caja-1{
+    
+    width: 230px;
+     background: rgba(255, 255, 255, 0.345);
+     border-radius: 10px;
+     text-align: center;
+     border-top: 6px solid rgba(0, 0, 0, 0.651);
+     border-left: 6px solid rgba(255, 255, 255, 0.658);
+     box-shadow: 0 0px 10px rgb(0, 0, 0);
+     
+   
+    
+  
+   }
+ 
+   
+   .caja-1 img{
+     margin-top: 10px;
+     width: 100px;
+     height: 100px;
+     border-radius: 10px;
+   }
+   .caja-1 p{
+     text-align: justify;
+     padding: 15px;
+ 
+   }
+  
+   .comprar{
+    margin: 28px 0 20px 0;
+    width: 110px;
+    display: inline-block;
+    background: rgb(175, 0, 0);
+    text-align: center;
+    color: #fff;
+    padding: 12px 0;
+    text-decoration: none;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 14px;
+    border-radius: 20px;
+    border-top: 3px solid rgba(0, 0, 0, 0.651);
+    border-left: 3px solid rgba(0, 0, 0, 0.658);
+   
+    cursor: pointer;
+  
+   }
+   .comprar:hover{
+    box-shadow: 0 8px 32px rgba(252, 252, 252, 0.589);
+    letter-spacing: .2rem;
+    width: 120px;
+
+   }
+   /*___________________slider________*/
+   .fondo-slider{
+       width: 100%;
+       height: 95vh;
+       background: #000000a8;
+       border-top: 10px solid rgba(0, 0, 0, 0.575);
+       border-radius: 20px;
+       background:rgba(0, 0, 0, 0.473);
+   }
+   .contenedor-slider{
+       position: relative;
+       margin: auto;
+       top: 60px;
+     
+       background: cornflowerblue;
+       width: 100%;
+       max-width: 1000px;
+       overflow: hidden;
+       box-shadow: 0 0 0 10px #000000,
+                    20px 20px 20px white;
+       border-radius: 10px;
+      
+   }
+   
+   .slider{
+       display: flex;
+       width: 800%; /* Esto es proporcional al numero de img que se le ponga al slider, por ejemplo si son 9 img, sería 900%*/
+       height: 500px;
+       margin-left: -100%;
+   }
+   .slider__section{
+       width: 100%;
+   }
+   .slider__img{
+       display: block;
+       width: 100%;
+       height: 100%;
+       object-fit: cover;
+
+   }
+   .slider__btn{
+       position: absolute;
+       width:40px;
+       height: 40px;
+       background: rgba(255, 255, 255, 0.7);
+       top:50%;
+       transform: translateY(-50%);
+       font-size: 30px;
+       font-weight: bold;
+       font-family: monospace;
+       text-align: center;
+       border-radius: 50%;
+       cursor: pointer;
+   }
+   .slider__btn--right{
+       right: 10px;
+   }
+   .slider__btn--left{
+    left: 10px;
+}
+.slider__btn:hover{
+    background: #fff;
+}
+  
+  
+   /*footer_________________*/
+   footer {
+    background:rgba(0, 0, 0, 0.637);
+    padding: 20px 20px 20px;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    font-family: 'Roboto', sans-serif;
+    height: 300px;
+    border-top: 5px solid rgba(0, 0, 0, 0.705);
+    border-radius: 10px;
+    margin-top: 20px;
+  
+    
+    
+  }
+  
+  .partFooter {
+    width: 30%;
+    text-align: center;
+    margin: 20px;
+    margin-top: 35px;
+    
+   
+  }
+  
+  
+  .partFooter h5 {
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 30px;
+    text-shadow:0px 0px 10px rgb(0, 181, 253); 
+    box-shadow:3px 3px 3px rgb(149, 183, 255);
+    border-radius: 5px;
+    
+  }
+  
+  .partFooter h4 {
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 30px;
+    margin-left: 50px;
+    text-shadow:0px 0px 10px rgb(0, 181, 253); 
+    box-shadow:3px 3px 3px rgb(149, 183, 255);
+    border-radius: 5px;
+    
+  }
+  
+  .partFooter a {
+    display: block;
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 300;
+    transition: color .3s ease-in-out;
+    margin-bottom: 15px;
+   
+  }
+  .partFooter .fa-facebook-f:hover{
+    background: #3b5998;
+    color: white;
+  }
+  .partFooter .fa-instagram:hover{
+    background: linear-gradient(to top right, #fcde30, #e9712a, #d2313b, #ae4198, #7540a1, #5443a8);
+    color: white;
+  }
+  .partFooter .fa-whatsapp:hover{
+    background: #009231;
+    color: white;
+  }
+  .partFooter .fa-envelope:hover{
+    background: #d80202;
+    color: white;
+  }
+  .redes{
+    margin-right: 50px;
+  }
+  
+  .partFooter img {
+    width: 70%;
+  }
+  
+  .social-media i {
+    font-size: 20px;
+    display: inline-block;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    border-radius: 50%;
+    width: 38px;
+    height: 38px;
+    line-height: 36px;
+    cursor: pointer;
+    margin-top: 20px;
+    text-align: center;
+    transition: all ease-in-out .3s;
+    margin-right: 5px;
+  }
+  .partFooter>h1{
+    color: #ffffff;
+    margin-top: -20px;
+    box-shadow:3px 3px 3px rgb(149, 183, 255);
+  
+  }
+  .partFooter b{
+    color:#ffffff
+  
+  }
+  .partFooter p{
+  
+    font-size: 17px;
+    text-align: justify;
+    color: #ffffff;
+    font-weight: 300;
+    display: inline-block;
+    padding: 10px;
+  }
+  
+  .container-footer hr{
+  
+    border: none;
+    height: 2px;
+    background: rgb(149, 183, 255);
+    width: 900px;
+  }
+  .container-footer h4{
+    text-align: center;
+    margin-top: 20px;
+    color: rgb(149, 183, 255);
+    font-weight: bold;
+  }
+
+
+  .carrusel {
+    
+    width: 50%;
+    position:absolute;
+    animation: rotar 40s infinite linear;
+    transform-style: preserve-3d;
+    
+  
+}
+.carrusel:hover{
+    animation-play-state: paused;
+    cursor: pointer;
+}
+
+.carrusel img{
+    width: 50%;
+    height: 100px;
+    overflow: hidden;
+    position:absolute;
+    box-shadow: 0px 0px 2px 0px rgb(255, 255, 255);
+    transition: 300ms;
+    
+}
+
+          
+            
